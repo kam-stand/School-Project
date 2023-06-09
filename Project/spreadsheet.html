@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spreadsheet Example</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      height: 100%;
+    }
+    
+    table {
+      flex: 1;
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    
+    .sidebar {
+      width: 150px;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <button onclick="addColumn()">Add Column</button>
+      <button onclick="addRow()">Add Row</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 4</td>
+          <td>Data 5</td>
+          <td>Data 6</td>
+        </tr>
+        <tr>
+          <td>Data 7</td>
+          <td>Data 8</td>
+          <td>Data 9</td>
+        </tr>
+        <tr>
+          <td>Data 10</td>
+          <td>Data 11</td>
+          <td>Data 12</td>
+        </tr>
+        <tr>
+          <td>Data 13</td>
+          <td>Data 14</td>
+          <td>Data 15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function addColumn() {
+      // Logic to add a column to the table
+      console.log('Column added');
+    }
+
+    function addRow() {
+      // Logic to add a row to the table
+      console.log('Row added');
+    }
+  </script>
+</body>
+</html>
